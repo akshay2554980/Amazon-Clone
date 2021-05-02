@@ -1,0 +1,7 @@
+*{ 
+  margin: 0%;
+}
+/* makes all things centered,everything gets snapped to side of the windows. */
+body{
+  background-color: #EAEDED;
+}

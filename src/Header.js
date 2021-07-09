@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import RoomIcon from '@material-ui/icons/Room';
-import {BrowserRouter as Link} from "react-router-dom";
-
+import { Link } from 'react-router-dom'
 function Header({cartItems}) {
 
 const getCount=()=>{
@@ -16,11 +15,12 @@ const getCount=()=>{
 }
     return (
         <Container>  
-        <Link to="/home"> 
+         <Link to="/home">
             <HeaderLogo>
-                <img src={"https://mikekitko.com/wp-content/uploads/2019/10/amazon-logo-white-768x232.png"} />
-            </HeaderLogo>
-        </Link>    
+                <img src={"https://mikekitko.com/wp-content/uploads/2019/10/amazon-logo-white-768x232.png"} alt="not available"/>
+            </HeaderLogo>   
+        </Link>
+         
             <HeaderOptionAddress>
                 <RoomIcon />
                 <NavOptions>
@@ -47,12 +47,12 @@ const getCount=()=>{
             </NavOptions>
 
             
+            
             <HeaderOptionCart>
             <Link to="/cart">
             <ShoppingCartIcon />
             <CartCount>{getCount()}</CartCount>
             </Link>
-            
             </HeaderOptionCart>
             
         
@@ -131,15 +131,12 @@ padding:10px 9px 10px 9px;
 const HeaderOptionCart =styled.div`
 display:flex;
 align-items:center;
-a{
+a {
     display:flex;
     align-items:center;
-    color:white;
     text-decoration:none;
+    color:white;
 }
-`;
-const Cart=styled.div`
-
 `;
 const CartCount=styled.div`
 padding-left:9px;

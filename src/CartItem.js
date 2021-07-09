@@ -21,7 +21,7 @@ function deleteItem(e){
     return (
         <Container>
            <ImageContainer>
-               <img src={item.image}/>
+               <img src={item.image} alt="not available"/>
            </ImageContainer> 
            <CartItemInfo>
                <CartItemInfoTop>

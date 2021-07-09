@@ -4,7 +4,7 @@ import Header from './Header';
 import Cart from './Cart';
 import Login from './Login'
 import Home from './Home';
-import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import { db } from './firebase';
 function App() {
   const [cartItems, setcartItems] = useState([]);
@@ -26,16 +26,16 @@ function App() {
     <div className="App">
       <Header cartItems={cartItems}/>
       <Switch>
-      <Route path="/login">
+      <Route path="/login" exact>
       <Login />       
       </Route>
-      <Route path="/cart">
+      <Route path="/cart" exact>
         <Cart cartItems={cartItems}/>
       </Route>
-      <Route path="/home">
+      <Route path="/home" exact>
         <Home />
       </Route>
-      <Route path="/">
+      <Route path="/" exact>
         <Home />
       </Route>
       </Switch>

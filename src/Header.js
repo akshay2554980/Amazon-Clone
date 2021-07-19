@@ -17,7 +17,7 @@ const getCount=()=>{
         <Container>  
          <Link to="/home">
             <HeaderLogo>
-                <img src={"https://mikekitko.com/wp-content/uploads/2019/10/amazon-logo-white-768x232.png"} alt="not available"/>
+                <img src={"http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG"} alt="not available"/>
             </HeaderLogo>   
         </Link>
          
